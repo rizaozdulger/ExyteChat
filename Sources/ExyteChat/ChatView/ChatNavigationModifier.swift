@@ -20,7 +20,7 @@ struct ChatNavigationModifier: ViewModifier {
         content
             .navigationBarBackButtonHidden()
             .toolbar {
-                backButton
+                //backButton
                 infoToolbarItem
             }
     }
