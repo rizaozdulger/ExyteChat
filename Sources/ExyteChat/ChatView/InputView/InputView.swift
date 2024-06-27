@@ -204,7 +204,7 @@ struct InputView: View {
                     .foregroundColor(theme.colors.sendButtonBackground)
             }
             Group {
-                if state.canSend || availableInput == .textOnly {
+                if state.canSend || !availableInput.isAudioAvailable {
                     sendButton
                         .disabled(!state.canSend)
                 } else {
